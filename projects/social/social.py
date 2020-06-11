@@ -16,6 +16,7 @@ class Queue():
     def size(self):
         return len(self.queue)
 
+
 class SocialGraph:
     def __init__(self):
         self.last_id = 0
@@ -79,8 +80,7 @@ class SocialGraph:
 
         The key is the friend's ID and the value is the path.
         """
-        visited = {}  # Note that this is a dictionary, not a set
-        # !!!! IMPLEMENT ME
+        visited = {} 
         queue = Queue()
         queue.enqueue([user_id])
 
